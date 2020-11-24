@@ -47,7 +47,7 @@ class ToDo extends React.Component {
     return (
       <>
         <section id='form-header'>
-          <h2>
+          <h2 data-testid="display-head" >
           There are {this.state.list.filter(item => !item.complete).length} Items To Complete
           </h2>
         </section>

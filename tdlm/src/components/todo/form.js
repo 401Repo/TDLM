@@ -22,7 +22,7 @@ class TodoForm extends React.Component {
   render() {
     return (
       <>
-        <h3 className='bright'>Add Item</h3>
+        <h3 data-testid="display-head-form" className='bright'>Add Item</h3>
         <form onSubmit={this.handleSubmit}>
           <label>
             <span>To Do Item</span>
