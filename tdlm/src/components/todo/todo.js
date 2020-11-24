@@ -46,25 +46,26 @@ class ToDo extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <h2>
+        <section id='form-header'>
+          <h2 data-testid="display-head" >
           There are {this.state.list.filter(item => !item.complete).length} Items To Complete
           </h2>
-        </header>
+        </section>
 
+    <div id='form-space'>
         <section className="todo">
-
-          <div>
+          <div id='input-form'>
             <TodoForm handleSubmit={this.addItem} />
           </div>
 
-          <div>
+          <div id='output-form'>
             <TodoList
               list={this.state.list}
               handleComplete={this.toggleComplete}
             />
           </div>
         </section>
+        </div>
       </>
     );
   }
