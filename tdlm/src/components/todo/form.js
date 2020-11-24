@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Card, Row, Col, Button } from 'react-bootstrap';
 
 class TodoForm extends React.Component {
 
@@ -21,7 +22,7 @@ class TodoForm extends React.Component {
   render() {
     return (
       <>
-        <h3>Add Item</h3>
+        <h3 className='bright'>Add Item</h3>
         <form onSubmit={this.handleSubmit}>
           <label>
             <span>To Do Item</span>
@@ -39,7 +40,7 @@ class TodoForm extends React.Component {
             <span>Assigned To</span>
             <input type="text" name="assignee" placeholder="Assigned To" onChange={this.handleInputChange} />
           </label>
-          <button>Add Item</button>
+          <Button type='Submit' variant="dark">Add Item</Button>{' '}
         </form>
       </>
     );
