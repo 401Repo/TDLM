@@ -54,7 +54,7 @@ body, html {
 
             &.complete-true {
               span {
-                background: rgb(230, 246, 84);
+                background: rgb(41, 46, 2);
                 text-decoration:line-through;
                 &:hover {
                    background: rgb(46, 79, 139);
@@ -63,7 +63,7 @@ body, html {
             }
 
             span {
-                background: #e0e0e0;
+                color: whitesmoke;
                 cursor:pointer;
                 &:hover {
                     background: rgb(246, 84, 238);
